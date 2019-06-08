@@ -8,9 +8,9 @@
 
 
 # Seeds 
-## Criando nossos Users
-User.create name: 'Lucilio', status: :active, kind: :salesman
-User.create name: 'Admin', status: :active, kind: :manager
+User.create name: 'Lucilio', status: :active, kind: :salesman, email: 'lucilio@techope.com.br', password: '123456'
+User.create name: 'Leandro', status: :active, kind: :salesman, email: 'leandro@techope.com.br', password: '123456'
+User.create name: 'Admin', status: :active, kind: :manager, email: 'admin@techope.com.br', password: '123456'
 
 ## Criando os produtos
 Product.create name: 'Smartphone', description: 'Um smartphone novo...', status: :active
