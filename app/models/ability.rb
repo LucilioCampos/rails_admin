@@ -7,7 +7,7 @@ class Ability
     if user
 			if user.kind == 'salesman'
 				can :access, :rails_admin
-        can :dashboard, :all
+				can :dashboard, :all
         can :manage, Client, user_id: user.id
 				can :manage, Sale, user_id: user.id
 				can :read, Product, status: :active
@@ -16,7 +16,7 @@ class Ability
 				can :manage, ProductQuantity, user_id: user.id
 				can :manage, Address, user_id: user.id
 			elsif user.kind = 'manager'
-					can :manage, :all
+				can :manage, :all
       end
     end
   end
